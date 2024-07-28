@@ -1,0 +1,17 @@
+.nav-bar, .top, .breadcrumb, .sidenav, .sidecontent,.footer,.bottom{
+    display:none;
+}
+.maincontent{
+    display:block;
+    width:100%;
+}
+.accordion__content{
+    display:block;
+    height:auto;
+}
+.accordion__heading:after {
+    display:none;
+}
+.expand-all,.close-all,.back-top{
+    display:none;
+}

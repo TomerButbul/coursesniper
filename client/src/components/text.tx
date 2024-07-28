@@ -1,0 +1,2 @@
+CREATE USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Tomcar123!';
+GRANT ALL PRIVILEGES ON coursesniper.* TO 'root'@'localhost';

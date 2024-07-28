@@ -1,0 +1,107 @@
+/* Bootstrap Purdue Theme */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Override Bootstrap variables to match Purdue colors */
+:root {
+  --primary: #29ae00; /* Purdue Old Gold */
+  --secondary: #f9d72d; /* Purdue Black */
+  --success: #5c7d34; /* Purdue Green */
+  --danger: #c92b31; /* Purdue Red */
+  --info: #55769a; /* Purdue Blue */
+  --light: #e8ce0b; /* Light gray for backgrounds */
+  --dark: #343a40; /* Dark gray for text */
+}
+
+/* Override specific Bootstrap classes */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: #a6381e; /* Darker shade of Old Gold on hover */
+  border-color: #a6381e;
+}
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+.btn-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+.btn-info {
+  background-color: var(--info);
+  border-color: var(--info);
+}
+
+/* Custom Purdue styles */
+body {
+  color: var(--dark);
+}
+
+/* Responsive adjustments */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Custom Background Images for Each Page */
+.page1, .page2, .page3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add more classes .page3, .page4, etc., as needed */

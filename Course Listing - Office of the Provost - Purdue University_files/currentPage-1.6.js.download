@@ -1,0 +1,26 @@
+
+//Highlight current page/folder on top nav
+document.addEventListener('DOMContentLoaded', function() {
+    const $currentpage=window.location.href;
+    const $blackbar=document.querySelector('.blackbar');
+    const $topnav=$blackbar.querySelector('.navbar-nav');
+    const $navbar_items=Array.prototype.slice.call($topnav.querySelectorAll('a'), 0);
+    if ($navbar_items.length > 0) {
+        $navbar_items.forEach((el)=>{
+            const $href=el.getAttribute('href');
+            if($currentpage.includes($href)){
+                if(el.parentElement.parentElement.classList.contains('navbar-nav')){
+                    el.classList.add('is-active-page');
+                    console.log(el);
+                }else if(el.parentElement.parentElement.parentElement.parentElement.classList.contains('navbar-nav')){
+                    el.parentElement.parentElement.previousElementSibling.classList.add('is-active-page');
+                    console.log(el);
+                }else if(el.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.contains('navbar-nav')){
+                    el.parentElement.parentElement.parentElement.parentElement.previousElementSibling.classList.add('is-active-page');
+                    console.log(el);
+                    
+                }
+            }
+        })
+    }
+}, false);
