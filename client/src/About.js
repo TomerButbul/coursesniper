@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
-
+//hi
 const About = () => {
   const [error, setError] = useState('');
   const [username, setUsername] = useState('');
