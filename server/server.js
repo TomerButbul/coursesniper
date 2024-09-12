@@ -16,9 +16,9 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Tomcar123!', // Ensure this matches your MySQL password
+  host: '',
+  user: '',
+  password: '', // Ensure this matches your MySQL password
   database: 'coursesniper'
 });
 
