@@ -49,14 +49,14 @@ def login():
     user = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.ID, "username"))
     )
-    user.send_keys("cbutbul")
+    user.send_keys("username")
     user.send_keys(Keys.RETURN)
 
     # Wait for the password field and enter the password
     password = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.ID, "password"))
     )
-    password.send_keys("Butbc001.310")
+    password.send_keys("password")
     password.send_keys(Keys.RETURN)
 
     # Wait 15 seconds after login (adjust as needed)
